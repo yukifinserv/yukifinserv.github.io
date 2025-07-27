@@ -1,5 +1,19 @@
 /* Reset and Base Styles */
-* {
+*
+/* Add to style.css for responsive logo */
+header img {
+  max-height: 64px;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
+}
+@media (max-width:600px) {
+  header img {
+    max-height: 40px;
+  }
+}
+
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
