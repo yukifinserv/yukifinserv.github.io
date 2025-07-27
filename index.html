@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUKI FINSERV - Fast, Reliable, Direct Loan Solutions</title>
+    <meta name="description" content="Yuki Finserv provides fast, reliable loan solutions including personal loans, business loans, car loans, and housing loans with competitive rates.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>YUKI FINSERV</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#loans">Loans</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:7483214571" class="btn-call">
+                        <i class="fas fa-phone"></i> 7483214571
+                    </a>
+                    <button class="btn-callback" onclick="openCallbackForm()">Request Callback</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Fast, Reliable, and Direct Loan Solutions</h1>
+            <p>Get instant approval on personal loans, business loans, and more with minimal documentation and competitive rates.</p>
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="openCallbackForm()">Apply Now</button>
+                <a href="tel:7483214571" class="btn-secondary">
+                    <i class="fas fa-phone"></i> Talk to Agent
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-chart-line"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Yuki Finserv?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Instant Approval</h3>
+                    <p>Get loan approval within 24 hours with our streamlined process</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure & Reliable</h3>
+                    <p>Your financial data is protected with bank-grade security</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Competitive Rates</h3>
+                    <p>Best-in-market interest rates starting from 7.90% p.a.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Minimal Documentation</h3>
+                    <p>Simple paperwork with digital verification process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Products Section -->
+    <section id="loans" class="loans">
+        <div class="container">
+            <h2>Our Loan Products</h2>
+            <div class="loans-grid">
+                <!-- Personal Loans -->
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Personal Loans</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to ₹40 lakh</p>
+                        <p><strong>Interest:</strong> 10.90% - 24% p.a.</p>
+                        <p><strong>Tenure:</strong> 12 - 84 months</p>
+                    </div>
+                    <ul class="loan-features">
+                        <li>Unsecured loan</li>
+                        <li>Instant approval</li>
+                        <li>Minimal documentation</li>
+                        <li>Flexible repayment</li>
+                    </ul>
+                    <button class="btn-apply" onclick="openCallbackForm()">Apply Now</button>
+                </div>
+
+                <!-- Business Loans -->
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business Loans</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to ₹75 lakh</p>
+                        <p><strong>Interest:</strong> 11% - 20% p.a.</p>
+                        <p><strong>Tenure:</strong> 12 - 96 months</p>
+                    </div>
+                    <ul class="loan-features">
+                        <li>Working capital solutions</li>
+                        <li>Flexible repayment options</li>
+                        <li>Suited for SMEs</li>
+                        <li>Quick processing</li>
+                    </ul>
+                    <button class="btn-apply" onclick="openCallbackForm()">Apply Now</button>
+                </div>
+
+                <!-- Car Loans -->
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Car Loans</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to ₹1 crore</p>
+                        <p><strong>Interest:</strong> Starting 8.50% p.a.</p>
+                        <p><strong>Tenure:</strong> Up to 84 months</p>
+                    </div>
+                    <ul class="loan-features">
+                        <li>100% financing available</li>
+                        <li>New & used cars</li>
+                        <li>Instant sanction</li>
+                        <li>Flexible tenure</li>
+                    </ul>
+                    <button class="btn-apply" onclick="openCallbackForm()">Apply Now</button>
+                </div>
+
+                <!-- Housing Loans -->
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Housing Loans</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to ₹10 crore</p>
+                        <p><strong>Interest:</strong> 7.90% - 13.20% p.a.</p>
+                        <p><strong>Tenure:</strong> Up to 30 years</p>
+                    </div>
+                    <ul class="loan-features">
+                        <li>Up to 65% of property value</li>
+                        <li>100% digital application</li>
+                        <li>Attractive rates</li>
+                        <li>Flexible EMI options</li>
+                    </ul>
+                    <button class="btn-apply" onclick="openCallbackForm()">Apply Now</button>
+                </div>
+
+                <!-- Loan Against Property -->
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Loan Against Property</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to ₹5 crore</p>
+                        <p><strong>Interest:</strong> 9.50% - 16% p.a.</p>
+                        <p><strong>Tenure:</strong> Up to 20 years</p>
+                    </div>
+                    <ul class="loan-features">
+                        <li>High loan amounts</li>
+                        <li>Property as collateral</li>
+                        <li>Competitive rates</li>
+                        <li>Multiple usage options</li>
+                    </ul>
+                    <button class="btn-apply" onclick="openCallbackForm()">Apply Now</button>
+                </div>
+
+                <!-- Working Capital -->
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Working Capital</h3>
+                    <div class="loan-details">
+                        <p><strong>Amount:</strong> Up to ₹2 crore</p>
+                        <p><strong>Interest:</strong> 12% - 18% p.a.</p>
+                        <p><strong>Tenure:</strong> Flexible</p>
+                    </div>
+                    <ul class="loan-features">
+                        <li>Overdraft facility</li>
+                        <li>Cash credit</li>
+                        <li>Term loans</li>
+                        <li>Bill discounting</li>
+                    </ul>
+                    <button class="btn-apply" onclick="openCallbackForm()">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMI Calculator -->
+    <section class="emi-calculator">
+        <div class="container">
+            <h2>EMI Calculator</h2>
+            <div class="calculator">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label>Loan Amount (₹)</label>
+                        <input type="range" id="loanAmount" min="50000" max="5000000" value="1000000" oninput="calculateEMI()">
+                        <span id="loanAmountValue">₹10,00,000</span>
+                    </div>
+                    <div class="input-group">
+                        <label>Interest Rate (% p.a.)</label>
+                        <input type="range" id="interestRate" min="7" max="25" value="12" step="0.1" oninput="calculateEMI()">
+                        <span id="interestRateValue">12%</span>
+                    </div>
+                    <div class="input-group">
+                        <label>Tenure (Years)</label>
+                        <input type="range" id="tenure" min="1" max="30" value="5" oninput="calculateEMI()">
+                        <span id="tenureValue">5 years</span>
+                    </div>
+                </div>
+                <div class="calculator-result">
+                    <h3>Monthly EMI</h3>
+                    <div class="emi-amount" id="emiAmount">₹22,244</div>
+                    <div class="emi-breakdown">
+                        <div class="breakdown-item">
+                            <span>Total Payment:</span>
+                            <span id="totalPayment">₹13,34,640</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Total Interest:</span>
+                            <span id="totalInterest">₹3,34,640</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DSA Team Section -->
+    <section id="agents" class="agents">
+        <div class="container">
+            <h2>Our Direct Selling Agent Team</h2>
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <div class="agent-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Rajesh Kumar</h3>
+                    <p class="agent-title">Senior Loan Advisor</p>
+                    <p class="agent-specialization">Specializes in Personal & Business Loans</p>
+                    <div class="agent-contact">
+                        <a href="tel:7483214571" class="btn-contact">
+                            <i class="fas fa-phone"></i> Contact Agent
+                        </a>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Priya Sharma</h3>
+                    <p class="agent-title">Home Loan Specialist</p>
+                    <p class="agent-specialization">Expert in Housing & Property Loans</p>
+                    <div class="agent-contact">
+                        <a href="tel:7483214571" class="btn-contact">
+                            <i class="fas fa-phone"></i> Contact Agent
+                        </a>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Amit Patel</h3>
+                    <p class="agent-title">Business Finance Advisor</p>
+                    <p class="agent-specialization">SME & Working Capital Solutions</p>
+                    <div class="agent-contact">
+                        <a href="tel:7483214571" class="btn-contact">
+                            <i class="fas fa-phone"></i> Contact Agent
+                        </a>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-photo">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Sunita Verma</h3>
+                    <p class="agent-title">Vehicle Loan Expert</p>
+                    <p class="agent-specialization">Car & Commercial Vehicle Financing</p>
+                    <div class="agent-contact">
+                        <a href="tel:7483214571" class="btn-contact">
+                            <i class="fas fa-phone"></i> Contact Agent
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excellent service! Got my personal loan approved within 24 hours. The team was very professional and helpful throughout the process."</p>
+                    <div class="customer-info">
+                        <strong>Rahul Singh</strong>
+                        <span>Mumbai</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Yuki Finserv made my home loan journey smooth and hassle-free. Great rates and minimal documentation required."</p>
+                    <div class="customer-info">
+                        <strong>Deepika Nair</strong>
+                        <span>Bangalore</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Quick business loan approval helped me expand my business. Highly recommend their services for SME financing."</p>
+                    <div class="customer-info">
+                        <strong>Vikram Joshi</strong>
+                        <span>Pune</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <a href="tel:7483214571">7483214571</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <strong>Company</strong>
+                            <p>YUKI FINSERV</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-id-card"></i>
+                        <div>
+                            <strong>GST Number</strong>
+                            <p>29AADFY5110G1Z8</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address</strong>
+                            <p>[Placeholder for office address]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callback-form">
+                    <h3>Request a Callback</h3>
+                    <form id="callbackForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="loanType">Loan Type *</label>
+                            <select id="loanType" name="loanType" required>
+                                <option value="">Select Loan Type</option>
+                                <option value="personal">Personal Loan</option>
+                                <option value="business">Business Loan</option>
+                                <option value="car">Car Loan</option>
+                                <option value="housing">Housing Loan</option>
+                                <option value="lap">Loan Against Property</option>
+                                <option value="working-capital">Working Capital</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Loan Amount (₹)</label>
+                            <input type="number" id="amount" name="amount" placeholder="e.g., 500000">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Tell us about your requirements"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YUKI FINSERV</h3>
+                    <p>Your trusted partner for all loan requirements. Fast, reliable, and direct loan solutions.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> 7483214571</p>
+                        <p><i class="fas fa-id-card"></i> GST: 29AADFY5110G1Z8</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Loan Products</h4>
+                    <ul>
+                        <li><a href="#loans">Personal Loans</a></li>
+                        <li><a href="#loans">Business Loans</a></li>
+                        <li><a href="#loans">Car Loans</a></li>
+                        <li><a href="#loans">Housing Loans</a></li>
+                        <li><a href="#loans">Loan Against Property</a></li>
+                        <li><a href="#loans">Working Capital</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#agents">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Get Started</h4>
+                    <a href="tel:7483214571" class="footer-btn">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <button class="footer-btn" onclick="openCallbackForm()">
+                        <i class="fas fa-callback"></i> Request Callback
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 YUKI FINSERV. All rights reserved.</p>
+                <p class="disclaimer">
+                    Disclaimer: Loan approval is subject to credit evaluation and bank/NBFC policies.
+                    Interest rates and terms may vary. Please verify all details before proceeding.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Callback Modal -->
+    <div id="callbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Request a Callback</h2>
+            <form id="modalCallbackForm">
+                <div class="form-group">
+                    <label for="modalName">Full Name *</label>
+                    <input type="text" id="modalName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Phone Number *</label>
+                    <input type="tel" id="modalPhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalLoanType">Loan Type *</label>
+                    <select id="modalLoanType" name="loanType" required>
+                        <option value="">Select Loan Type</option>
+                        <option value="personal">Personal Loan</option>
+                        <option value="business">Business Loan</option>
+                        <option value="car">Car Loan</option>
+                        <option value="housing">Housing Loan</option>
+                        <option value="lap">Loan Against Property</option>
+                        <option value="working-capital">Working Capital</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
